@@ -49,11 +49,25 @@ function Cards(a, b, c, d) {
   return `<div class="card" >
   
   <img src="${a}" class="card-img-top" alt="...">
-  <div class="card-body">
     <h5 class="card-title">${b}</h5>
     <p class="card-text">${c}</p>
-    <a href="${d}" class="btn btn-primary">Recipe Video</a>
-  </div>
+    <a href="${d}" ><button class="vidButton">Recipe Video</button></a>
+ 
   
 </div>`;
+}
+//sticky navbar function
+window.onscroll = function () {
+  myFunction();
+};
+
+var navbar = document.getElementsByClassName("navbar")[0];
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }

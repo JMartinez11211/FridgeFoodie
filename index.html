@@ -14,14 +14,29 @@
       <nav>
         <div class="navList">
           <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+            <div>
+              <li>
+                <a href="about.html"
+                  ><button class="navButton">About</button></a
+                >
+              </li>
+            </div>
+            <div>
+              <li>
+                <a href="contact.html"
+                  ><button class="navButton">Contacts</button></a
+                >
+              </li>
+            </div>
           </ul>
         </div>
       </nav>
     </div>
     <div id="inputBar">
       <span>
+        <p id="inputParagraph">
+          Welcome! please enter and recipe you would like to find.
+        </p>
         <input
           id="userInput"
           type="string"
@@ -30,8 +45,12 @@
       </span>
     </div>
 
-    <div id="container"></div>
-<div id="footer"></div>
+    <div id="container">
+      <p>This is a test shoutldnt be seen after i search</p>
+    </div>
+    <div class="footer">
+      <p>Fridge Foodie all rights reserved @copyrighted 2021</p>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="heading">  
-        <h1>Fridge Foodie</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Fridge Foodie</h1>
+    </div>
+
+    <div class="navbar">
+      <nav>
+        <div class="navlist">
+          <ul>
+            <div>
+              <li>
+                <a href="about.html"
+                  ><button class="navButton">About</button></a
+                >
+              </li>
+            </div>
+            <div>
+              <li>
+                <a href="index.html"><button class="navButton">Home</button></a>
+              </li>
+            </div>
+          </ul>
         </div>
+      </nav>
+    </div>
+    <div id="formParagraph">
+      <p>
+        If you have any questions or suggestions please fill out the form below.
+      </p>
+    </div>
 
-<div class="navbar">
-    <nav>
-       <div class="navlist">
-           <ul>
-             <li><a href="about.html">About</a></li>
-             <li><a href="index.html">Home</a></li>
-           </ul>
-       </div>
-     </nav>
-   </div>        
-
-</body>
+    <div class="ContactForm">
+      <div class="Formtitle">Contact form</div>
+      <form action="#">
+        <div class="user-details">
+          <div class="input">
+            <span class="details">First Name</span>
+            <input class="formInput" type="text" name="Firstname" required />
+          </div>
+          <div class="input">
+            <span class="details">Last Name</span>
+            <input type="text" name="Lasname" required />
+          </div>
+          <div class="input">
+            <span class="details">Email</span>
+            <input type="text" name="email" required />
+          </div>
+        </div>
+        <div class="input-message">
+          <div class="input">
+            <span class="details-message">Message</span>
+            <textarea type="text" name="Message" required> </textarea>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" name="Submit" value="submit" />
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <p id="contactfooter">
+        Fridge Foodie all rights reserved @copyrighted 2021
+      </p>
+    </div>
+  </body>
 </html>
