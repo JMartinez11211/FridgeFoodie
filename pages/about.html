@@ -38,7 +38,7 @@
     <div id="aboutContainer">
       <div><h2 id="about">About</h2></div>
       <div>
-        <p class="aboutParagraph" >
+        <p class="aboutParagraph">
           Fridge Foodie is a recipe search application using Tasty's API.<br />
           Wade through a vast library of recipes at the touch of a button.<br />
           Now filler to make this paragraph seem full.<br />
@@ -88,29 +88,38 @@
           officia deserunt mollit anim id est laborum."
         </p>
       </div>
-
-      <div>
-        <div><img src="${a}" class="sePic" alt="..." /></div>
-        <p id="testamonial1">
-          "Worst API I have ever used.<br />
-          Like what even is this?"<br>
-          Jesus Martinez Aspiring Software Engineer.
-        </p>
-      </div>
-      <div>
-        <p id="testamonial2">
-          "Not all API results have a description or even thumbnail.<br />
-          Well what can you do its a free APi gotta work with what i got."<br>
-          Totally different person, Software Engineer.
-        </p>
-        <div><img src="${a}" class="sePic" alt="..." /></div>
+      <div id="testContainer">
+        <div>
+          <div><img src="../images/me.jpeg" class="sePic" alt="..." /></div>
+          <p id="testamonial1">
+            "Worst API I have ever used.<br />
+            Like what even is this?"<br />
+            Jesus Martinez Aspiring Software Engineer.
+          </p>
+        </div>
+        <div>
+          <div><img src="../images/notme.png" class="sePic" alt="..." /></div>
+          <p id="testamonial2">
+            "Not all API results have a description or even thumbnail.<br />
+            Well what can you do its a free APi gotta work with what i got."<br />
+            Totally different person, Software Engineer.
+          </p>
+        </div>
       </div>
     </div>
 
     <div class="footer">
       <p>Fridge Foodie all rights reserved @copyrighted 2021</p>
     </div>
-
+    <style>
+      body {
+        background-image: url(../images/abg.jpeg);
+      }
+      #aboutContainer {
+        background-color: rgb(229, 237, 241);
+        text-align: center;
+      }
+    </style>
     <script>
       window.onscroll = function () {
         myFunction();

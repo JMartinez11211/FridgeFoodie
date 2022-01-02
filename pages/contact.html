@@ -34,45 +34,59 @@
         </div>
       </nav>
     </div>
-    <div id="formParagraph">
-      <p>
-        If you have any questions or suggestions please fill out the form below.
-      </p>
-    </div>
+    <div id="aboutContainer">
+      <div id="formParagraph">
+        <p id="contactP">
+          If you have any questions or suggestions please fill out the form
+          below.
+        </p>
+      </div>
 
-    <div class="ContactForm">
-      <div class="Formtitle">Contact form</div>
-      <form action="#">
-        <div class="user-details">
-          <div class="input">
-            <span class="details">First Name</span>
-            <input class="formInput" type="text" name="Firstname" required />
+      <div class="ContactForm">
+        <div class="Formtitle">Contact form</div>
+        <form action="#">
+          <div class="user-details">
+            <div class="input">
+              <span class="details">First Name</span>
+              <input class="formInput" type="text" name="Firstname" required />
+            </div>
+            <div class="input">
+              <span class="details">Last Name</span>
+              <input type="text" name="Lasname" required />
+            </div>
+            <div class="input">
+              <span class="details">Email</span>
+              <input type="text" name="email" required />
+            </div>
           </div>
-          <div class="input">
-            <span class="details">Last Name</span>
-            <input type="text" name="Lasname" required />
+          <div class="input-message">
+            <div class="input">
+              <span class="details-message">Message</span>
+              <textarea type="text" name="Message" required> </textarea>
+            </div>
           </div>
-          <div class="input">
-            <span class="details">Email</span>
-            <input type="text" name="email" required />
+          <div class="button">
+            <input type="submit" name="Submit" value="submit" />
           </div>
-        </div>
-        <div class="input-message">
-          <div class="input">
-            <span class="details-message">Message</span>
-            <textarea type="text" name="Message" required> </textarea>
-          </div>
-        </div>
-        <div class="button">
-          <input type="submit" name="Submit" value="submit" />
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
     <div class="footer">
       <p id="contactfooter">
         Fridge Foodie all rights reserved @copyrighted 2021
       </p>
     </div>
+    <style>
+      body {
+        background-image: url(../images/foodbg.jpg);
+
+        background-position: center;
+      }
+      #contactP {
+        background-color: rgb(229, 237, 241);
+        max-width: 530px;
+      }
+    </style>
     <script>
       window.onscroll = function () {
         myFunction();
