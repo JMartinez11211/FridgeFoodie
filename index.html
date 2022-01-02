@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
     <div class="heading">
@@ -16,14 +16,14 @@
           <ul>
             <div>
               <li>
-                <a href="about.html"
+                <a href="pages/about.html"
                   ><button class="navButton">About</button></a
                 >
               </li>
             </div>
             <div>
               <li>
-                <a href="contact.html"
+                <a href="pages/contact.html"
                   ><button class="navButton">Contacts</button></a
                 >
               </li>
@@ -34,9 +34,7 @@
     </div>
     <div id="inputBar">
       <span>
-        <p id="inputParagraph">
-          Welcome! please enter and recipe you would like to find.
-        </p>
+        <p id="inputParagraph">Welcome! please enter a recipe and search.</p>
         <input
           id="userInput"
           type="string"
@@ -46,11 +44,108 @@
     </div>
 
     <div id="container">
-      <p>This is a test shoutldnt be seen after i search</p>
+      <div id="faveRecPara">
+        <div>
+          <h3 class="h3Paragraph">
+            Food is essential for survival, but great food feeds the soul. here
+            are a cuople of my personal favorite dishes from around the
+            internet. Just clik on an image and enjoy a great meal
+          </h3>
+        </div>
+      </div>
+      <div class="faveRecipes">
+        <div class="fave">
+          <a href="https://www.myforkinglife.com/jamaican-oxtails/"
+            ><img
+              class="faveRecipesimg"
+              src="https://www.myforkinglife.com/wp-content/uploads/2019/07/jamaican-oxtail-1.jpg.webp"
+          /></a>
+        </div>
+      </div>
+      <div class="faveRecipes">
+        <div class="fave">
+          <a href="https://www.justonecookbook.com/japanese-beef-curry/"
+            ><img
+              class="faveRecipesimg"
+              src="https://v1.nitrocdn.com/KQYMGOLIdXGmoAcyJsPOrQDKktgCbwtG/assets/static/optimized/rev-164325c/wp-content/uploads/2014/04/Beef-Curry-II-600x900.jpg"
+          /></a>
+        </div>
+      </div>
+      <dive class="faceRecipes">
+        <div class="fave">
+          <a href="https://tasty.co/recipe/ultimate-brownies"
+            ><img
+              class="faveRecipesimg"
+              src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/166813.jpg"
+          /></a>
+          <h3 class="h3Paragraph">
+            If none of these recipes suit your tast, just enter what your craving in the search bar and happy cooking!
+          </h3>
+        </div>
+      </dive>
+      <div class="card">
+        <img
+          src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/55ac7efd43d74a6ead6576b4bfb28d7e/FB_Syphus_BananaBread_v3.jpg?resize=600:*&output-format=auto&output-quality=auto"
+          class="card-img-top"
+          alt="Image of chocolatechip banana bread"
+        />
+        <h5 class="card-title">One Bowl Chocolate Chip Banana Bread</h5>
+        <p class="card-text">
+          this chocolate chip banana bread recipe combines two of your favorite
+          things into one
+        </p>
+        <a href="https://tasty.co/recipe/one-bowl-chocolate-chip-banana-bread"
+          ><button class="vidButton">Recipe Video</button></a
+        >
+      </div>
+      <div class="card">
+        <img
+          src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/1c4c0c0dece7467c9c4175cb759ed6a7/BFV14220_3CourseTuscanChickenDinner-FB.jpg?resize=600:*&output-format=auto&output-quality=auto"
+          class="card-img-top"
+          alt="..."
+        />
+        <h5 class="card-title">Creamy Tuscan Chicken</h5>
+        <p class="card-text">
+          Loaded with fresh veggies, herbs, and rich Parmesan cheese, it’ll have
+          you saying ‘That’s amore!’
+        </p>
+        <a href="https://tasty.co/recipe/creamy-tuscan-chicken"
+          ><button class="vidButton">Recipe Video</button></a
+        >
+      </div>
+      <div class="card">
+        <img
+          src="https://img.buzzfeed.com/video-api-prod/assets/9d589367531e4c12a4937e30e521c865/fbthumb.jpg?resize=600:*&output-format=auto&output-quality=auto"
+          class="card-img-top"
+          alt="..."
+        />
+        <h5 class="card-title">Homemade Cinnamon Rolls</h5>
+        <p class="card-text">
+          Nothing says Sunday morning like a warm, gooey batch of homemade
+          cinnamon rolls. Finish them with a generous topping of frosting, and
+          be prepared to lick brown sugar off your fingers for the rest of the
+          afternoon.
+        </p>
+        <a href="https://tasty.co/recipe/homemade-cinnamon-rolls"
+          ><button class="vidButton">Recipe Video</button></a
+        >
+      </div>
+      <div class="card">
+        <img
+          src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/1c17e86f91b94748bf4cf52ba781c789/BFV16661_ShrimpAlfredoDinnerForTwoFINAL.jpg?resize=600:*&output-format=auto&output-quality=auto"
+          class="card-img-top"
+          alt="..."
+        />
+        <h5 class="card-title">Garlic Shrimp Bacon Alfredo</h5>
+        <p class="card-text">A tasty shrimp pasta dish for two!</p>
+        <a href="https://tasty.co/recipe/garlic-bacon-shrimp-alfredo"
+          ><button class="vidButton">Recipe Video</button></a
+        >
+      </div>
     </div>
     <div class="footer">
       <p>Fridge Foodie all rights reserved @copyrighted 2021</p>
     </div>
-    <script src="app.js"></script>
+    <script src="JS/app.js"></script>
   </body>
 </html>
